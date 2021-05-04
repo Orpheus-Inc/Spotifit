@@ -92,7 +92,13 @@ An app that generates a music playlist based on workout conditions specified by 
 * Creation
    => Music Streaming (assume user immdiately wants to use playlist)
 * Music Streaming
-  => Previous page (i.e., if they were on the Home page go there, if User Playlists)
+  => Previous page (i.e., if they were on the Home page go there, if User Playlists go there, etc.)
+* User Playlists
+  => None
+* Modifying
+  => User Playlists (after modifying/deleting a playlist)
+* Search
+  => None
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
