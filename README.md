@@ -101,8 +101,8 @@ An app that generates a music playlist based on workout conditions specified by 
   => None
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![Hand drawn basic wireframe](https://user-images.githubusercontent.com/45127818/117525267-3da29900-af76-11eb-8ec9-6499b8eb9371.jpg)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
