@@ -106,7 +106,15 @@ An app that generates a music playlist based on workout conditions specified by 
 
 ### [BONUS] Digital Wireframes & Mockups
 
+https://www.figma.com/file/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=0%3A1
+
 ### [BONUS] Interactive Prototype
+
+[Original Interactive Prototype](https://www.figma.com/proto/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=7%3A4&scaling=scale-down&page-id=0%3A1)
+
+GIF Walkthrough:
+
+![Interactive Prototype](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/Kapture%202021-05-10%20at%2015.29.53.gif)
 
 ## Schema 
 [This section will be completed in Unit 9]
