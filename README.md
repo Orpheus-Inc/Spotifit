@@ -114,7 +114,7 @@ https://www.figma.com/file/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=0%3A1
 
 GIF Walkthrough:
 
-![Interactive Prototype](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/Kapture%202021-05-10%20at%2015.29.53.gif)
+![Interactive Prototype](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/Kapture%202021-05-10%20at%2021.26.50.gif)
 
 ## Schema 
 [This section will be completed in Unit 9]
