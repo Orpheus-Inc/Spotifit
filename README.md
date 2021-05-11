@@ -60,9 +60,9 @@ An app that generates a music playlist based on workout conditions specified by 
 
 * Login Screen
     * User can login/logout with their personal Spotify account
-* Feed
+* Home Feed
     * User can view a feed of playlists
-* Creation
+* Playlist Creation
     * User can create a playlist using the following parameters:
         * BPM (for running it would be cadence)
         * Energy level (how pumped the playlist should be)
@@ -70,24 +70,24 @@ An app that generates a music playlist based on workout conditions specified by 
     *  User can stream music from the playlists, within the app
 * User Playlists
     * User can browse their previously generated playlists
-* Modifying
+* Modify Playlists
     * User can modify or delete playlists
-* Search
+* Search 
     * User can search playlists for tags
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Home (Feed)
+* Home Feed
 * User Playlists
 * Search
 
 **Flow Navigation** (Screen to Screen)
 
 * Login Screen
-  => Home (Feed) Screen
-* Home (Feed) Screen
+  => Home Feed Screen
+* Home Feed Screen
    => Music Streaming (if user clicks on a public playlist)
 * Creation
    => Music Streaming (assume user immdiately wants to use playlist)
@@ -101,26 +101,55 @@ An app that generates a music playlist based on workout conditions specified by 
   => None
 
 ## Wireframes
-![Hand drawn basic wireframe](https://user-images.githubusercontent.com/45127818/117525267-3da29900-af76-11eb-8ec9-6499b8eb9371.jpg)
-
+![Hand drawn basic wireframe](https://i.imgur.com/edwEdCM.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 
-https://www.figma.com/file/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=0%3A1
+[Figma Digital Mockup](https://www.figma.com/file/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=0%3A1)
 
 ### [BONUS] Interactive Prototype
 
-[Original Interactive Prototype](https://www.figma.com/proto/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=7%3A4&scaling=scale-down&page-id=0%3A1)
+[Interactive Prototype](https://www.figma.com/proto/eFrCBZD8mWIlIaO1uSPE0c/Spotifit?node-id=7%3A4&scaling=scale-down&page-id=0%3A1)
 
 GIF Walkthrough:
 
 ![Interactive Prototype](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/Kapture%202021-05-10%20at%2021.26.50.gif)
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   |       |    | 
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+* Login Screen
+    * 
+* Home Feed Screen 
+    * 
+* Playlist Creation
+    * 
+* Music Streaming
+    * 
+* User Playlists
+    * 
+* Modify Playlist
+    * 
+* Search
+    * 
+
+#### [OPTIONAL:] Existing API Endpoints
+##### Spotify Web API
+- Base URL - [https://api.spotify.com](https://api.spotify.com)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | TBD | TBD
+    `GET`    | TBD | TBD
+    `GET`    | TBD   | TBD
+    `GET`    | TBD | TBD
+    
+
+
