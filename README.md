@@ -117,28 +117,42 @@ GIF Walkthrough:
 
 ## Schema 
 ### Models
-#### Post
+#### Playlist
 
-   | Property      | Type     | Description |
-   | ------------- | -------- | ------------|
-   |       |    | 
+   | Property   | Type   | Description |
+   | ---------- | ------ | ----------- |
+   | playlistId | String | unique id for each playlist (default field) |
+   | playlistName | String | name of playlist |
+   | creator | Pointer to User| playlist creator |
+   | coverImage | File | cover image for playlist |
+   | tags | Array | list of tags on playlist (genres, etc.) |
+   |createdAt | DateTime | date when playlist is created (default field) |
+   | songs | Array | list of songs in playlist |
+   
+#### User
+
+   | Property   | Type   | Description |
+   | ---------- | ------ | ----------- |
+   | userId | String | unique id for each user |
+
    
 ### Networking
 #### List of network requests by screen
 * Login Screen
-    * 
+    * (Read/GET) Query user's Spotify account
 * Home Feed Screen 
-    * 
+    * (Read/GET) Fetch playlists for a user's home feed
 * Playlist Creation
-    * 
+    * (Create/POST) Create a new playlist object
 * Music Streaming
-    * 
+    * (Read/GET) Spotify song
 * User Playlists
-    * 
+    * (Read/GET) Get all playlists where user is creator
 * Modify Playlist
-    * 
+    * (Update/PUT) Changing a user's playlist
+    * (Delete) Delete existing playlist
 * Search
-    * 
+    * (Read/GET) Retrieve playlists based on search query
 
 #### [OPTIONAL:] Existing API Endpoints
 ##### Spotify Web API
