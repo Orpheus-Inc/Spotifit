@@ -15,6 +15,9 @@
 		479B520C26532C180016126A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479B520A26532C180016126A /* LaunchScreen.storyboard */; };
 		479B521726532C180016126A /* SpotifitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B521626532C180016126A /* SpotifitTests.swift */; };
 		479B522226532C180016126A /* SpotifitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B522126532C180016126A /* SpotifitUITests.swift */; };
+		6E4991AE9E0AE62EBC7F9E06 /* Pods_SpotifitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729276A40934A4557FB56AE /* Pods_SpotifitTests.framework */; };
+		AB737FF4D8C3A621554B4AA4 /* Pods_Spotifit_SpotifitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5309ABD47396F6B1F35947A /* Pods_Spotifit_SpotifitUITests.framework */; };
+		D349B553E92DFC0D6E904B47 /* Pods_Spotifit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		479B521D26532C180016126A /* SpotifitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		479B522126532C180016126A /* SpotifitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifitUITests.swift; sourceTree = "<group>"; };
 		479B522326532C180016126A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55361F56FC12764C8EA2AC80 /* Pods-Spotifit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit.debug.xcconfig"; path = "Target Support Files/Pods-Spotifit/Pods-Spotifit.debug.xcconfig"; sourceTree = "<group>"; };
+		73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8729276A40934A4557FB56AE /* Pods_SpotifitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F76624280985045F3C3E0D1 /* Pods-Spotifit-SpotifitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit-SpotifitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5309ABD47396F6B1F35947A /* Pods_Spotifit_SpotifitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotifit_SpotifitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3BE017399A64A78A5F6EBF /* Pods-Spotifit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit.release.xcconfig"; path = "Target Support Files/Pods-Spotifit/Pods-Spotifit.release.xcconfig"; sourceTree = "<group>"; };
+		D38D607A8B0CBFADB58BEF35 /* Pods-Spotifit-SpotifitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit-SpotifitUITests.release.xcconfig"; path = "Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotifit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D349B553E92DFC0D6E904B47 /* Pods_Spotifit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4991AE9E0AE62EBC7F9E06 /* Pods_SpotifitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB737FF4D8C3A621554B4AA4 /* Pods_Spotifit_SpotifitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				479B521526532C180016126A /* SpotifitTests */,
 				479B522026532C180016126A /* SpotifitUITests */,
 				479B51FD26532C170016126A /* Products */,
+				FB302B4DFCADC4985F809303 /* Pods */,
+				52B3A7E62D5BF58EF4992905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = SpotifitUITests;
 			sourceTree = "<group>";
 		};
+		52B3A7E62D5BF58EF4992905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */,
+				B5309ABD47396F6B1F35947A /* Pods_Spotifit_SpotifitUITests.framework */,
+				8729276A40934A4557FB56AE /* Pods_SpotifitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB302B4DFCADC4985F809303 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55361F56FC12764C8EA2AC80 /* Pods-Spotifit.debug.xcconfig */,
+				CF3BE017399A64A78A5F6EBF /* Pods-Spotifit.release.xcconfig */,
+				8F76624280985045F3C3E0D1 /* Pods-Spotifit-SpotifitUITests.debug.xcconfig */,
+				D38D607A8B0CBFADB58BEF35 /* Pods-Spotifit-SpotifitUITests.release.xcconfig */,
+				73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */,
+				8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 479B522626532C180016126A /* Build configuration list for PBXNativeTarget "Spotifit" */;
 			buildPhases = (
+				551AD96FFC3B0293AE4FEE34 /* [CP] Check Pods Manifest.lock */,
 				479B51F826532C170016126A /* Sources */,
 				479B51F926532C170016126A /* Frameworks */,
 				479B51FA26532C170016126A /* Resources */,
+				D28D11E76D3EE422B09964CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 479B522926532C180016126A /* Build configuration list for PBXNativeTarget "SpotifitTests" */;
 			buildPhases = (
+				CC12B25FF8EA23D9DD8FE59B /* [CP] Check Pods Manifest.lock */,
 				479B520E26532C180016126A /* Sources */,
 				479B520F26532C180016126A /* Frameworks */,
 				479B521026532C180016126A /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 479B522C26532C180016126A /* Build configuration list for PBXNativeTarget "SpotifitUITests" */;
 			buildPhases = (
+				5D416BA8F8F487EDE2C65B01 /* [CP] Check Pods Manifest.lock */,
 				479B521926532C180016126A /* Sources */,
 				479B521A26532C180016126A /* Frameworks */,
 				479B521B26532C180016126A /* Resources */,
+				D56303A7379795D7E1C6B9FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		551AD96FFC3B0293AE4FEE34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotifit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D416BA8F8F487EDE2C65B01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotifit-SpotifitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC12B25FF8EA23D9DD8FE59B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28D11E76D3EE422B09964CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotifit/Pods-Spotifit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotifit/Pods-Spotifit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotifit/Pods-Spotifit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56303A7379795D7E1C6B9FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		479B51F826532C170016126A /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		479B522726532C180016126A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55361F56FC12764C8EA2AC80 /* Pods-Spotifit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +601,7 @@
 		};
 		479B522826532C180016126A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3BE017399A64A78A5F6EBF /* Pods-Spotifit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +620,7 @@
 		};
 		479B522A26532C180016126A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		479B522B26532C180016126A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +664,7 @@
 		};
 		479B522D26532C180016126A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F76624280985045F3C3E0D1 /* Pods-Spotifit-SpotifitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +684,7 @@
 		};
 		479B522E26532C180016126A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38D607A8B0CBFADB58BEF35 /* Pods-Spotifit-SpotifitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
