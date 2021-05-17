@@ -39,22 +39,23 @@ An app that generates a music playlist based on workout conditions specified by 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User can login/logout with their personal Spotify account
-* User can create a playlist using the following parameters:
-    * BPM (for running it would be cadence)
-    * Energy level (how pumped the playlist should be)
-* User can stream music from the playlists, within the app
+- [X] User can navigate between Feed, Playlists, and Search screens
+- [ ] User can login/logout with their personal Spotify account
+- [ ] User can create a playlist using the following parameters:
+    - BPM (for running it would be cadence)
+    - Energy level (how pumped the playlist should be)
+- [ ] User can stream music from the playlists, within the app
+- [ ] User can view other user’s generated playlists on a feed
 
 **Optional Nice-to-have Stories**
 
-* User can browse the playlists they have made using the app
-* User can edit/delete playlists made using the app
-* User can duplicate playlists made using the app
-* User can hear an example song for the BPM currently selected
-* User's can add tags (workout/routine) to their playlists
-* User can view other user’s generated playlists on a feed
-* Playlists in feed display BPM/energy/tags
-* Users can select genre(s) for songs in the list
+- [ ] User can browse the playlists they have made using the app
+- [ ] User can edit/delete playlists made using the app
+- [ ] User can duplicate playlists made using the app
+- [ ] User can hear an example song for the BPM currently selected
+- [ ] User's can add tags (workout/routine) to their playlists
+- [ ] Playlists in feed display BPM/energy/tags
+- [ ] Users can select genre(s) for songs in the list
 
 ### 2. Screen Archetypes
 
