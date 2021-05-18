@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
                                 <rect key="frame" x="67" y="456" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2651622891" green="0.72432678939999995" blue="0.32741868499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="  Login with Spotify" image="spotify logo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -28,13 +33,14 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="gYv-Pn-ryd" kind="presentation" id="Gca-3w-31O"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Spotifit Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-U6-FG4">
-                                <rect key="frame" x="96" y="257" width="222" height="61"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Spotifit logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
+                                <rect key="frame" x="96" y="234" width="222" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -94,7 +100,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIc-dv-4jE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="757"/>
+            <point key="canvasLocation" x="1764" y="706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Je9-FO-scQ">
@@ -130,7 +136,7 @@
                         <viewLayoutGuide key="safeArea" id="kBa-GX-BA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Playlists" image="music-icon" id="IEm-ug-VTz"/>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="music" id="IEm-ug-VTz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lec-zB-il9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +152,7 @@
                         <viewLayoutGuide key="safeArea" id="Q9v-OM-q7i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="home-icon" id="o14-1B-G46"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="home" id="o14-1B-G46"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enb-MA-CRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,8 +180,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Spotifit Logo" width="222" height="61"/>
+        <image name="Spotifit logo" width="222" height="61"/>
+        <image name="home" width="28" height="31"/>
         <image name="home-icon" width="28" height="31"/>
+        <image name="music" width="31" height="31"/>
         <image name="music-icon" width="31" height="31"/>
         <image name="search-icon" width="35" height="35"/>
         <image name="spotify logo" width="39" height="39"/>
