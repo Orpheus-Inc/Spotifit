@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AC6EE265343BA00A835CA /* LoginViewController.swift */; };
 		479B520026532C170016126A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B51FF26532C170016126A /* AppDelegate.swift */; };
 		479B520226532C170016126A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B520126532C170016126A /* SceneDelegate.swift */; };
 		479B520426532C170016126A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B520326532C170016126A /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		478AC6EE265343BA00A835CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		479B51FC26532C170016126A /* Spotifit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479B51FF26532C170016126A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479B520126532C170016126A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				479B520826532C180016126A /* Assets.xcassets */,
 				479B520A26532C180016126A /* LaunchScreen.storyboard */,
 				479B520D26532C180016126A /* Info.plist */,
+				478AC6EE265343BA00A835CA /* LoginViewController.swift */,
 			);
 			path = Spotifit;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 				73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */,
 				8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */,
 				479B520426532C170016126A /* ViewController.swift in Sources */,
 				479B520026532C170016126A /* AppDelegate.swift in Sources */,
 				479B520226532C170016126A /* SceneDelegate.swift in Sources */,
