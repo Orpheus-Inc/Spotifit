@@ -6,7 +6,7 @@ target 'Spotifit' do
   use_frameworks!
 
   # Pods for Spotifit
-  pod "AlamofireImage"
+  pod 'AlamofireImage'
 
   target 'SpotifitTests' do
     inherit! :search_paths

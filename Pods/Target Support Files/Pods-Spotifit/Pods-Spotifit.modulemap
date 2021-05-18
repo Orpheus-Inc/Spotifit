@@ -1,0 +1,6 @@
+framework module Pods_Spotifit {
+  umbrella header "Pods-Spotifit-umbrella.h"
+
+  export *
+  module * { export * }
+}
