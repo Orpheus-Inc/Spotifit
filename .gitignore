@@ -88,3 +88,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+
+# PERSONAL USER EXCEPTIONS
+*Constants.swift
