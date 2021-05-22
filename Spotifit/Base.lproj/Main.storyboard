@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2651622891" green="0.72432678939999995" blue="0.32741868499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
-                                <state key="normal" title="  Login with Spotify" image="spotify logo">
+                                <state key="normal" title="  Login with Spotify" image="spotify-logo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -39,7 +39,7 @@
                                     <segue destination="gYv-Pn-ryd" kind="presentation" id="Gca-3w-31O"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Spotifit logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="spotifit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
                                 <rect key="frame" x="96" y="234" width="222" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -53,110 +53,105 @@
             <point key="canvasLocation" x="819" y="-133"/>
         </scene>
         <!--Feed-->
-        <scene sceneID="WQh-FH-gvv">
+        <scene sceneID="idc-df-x4g">
             <objects>
-                <tableViewController id="ZPW-7g-gfm" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sY6-eC-b8Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <tableViewController id="BcD-2R-UtQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ip2-Up-h2b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <tabBar key="tableFooterView" contentMode="scaleAspectFill" translucent="NO" id="s3s-Tw-H9q">
-                            <rect key="frame" x="0.0" y="92.500000346790671" width="414" height="49"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            <items>
-                                <tabBarItem title="Feed" image="home-icon" selectedImage="home-icon" id="34A-x7-7vp">
-                                    <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                    <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
-                                </tabBarItem>
-                                <tabBarItem title="Playlists" image="music-icon" id="UdV-JE-Mdl">
-                                    <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                </tabBarItem>
-                                <tabBarItem title="Search" image="search-icon" id="az1-gi-OqJ">
-                                    <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                </tabBarItem>
-                            </items>
-                            <color key="barTintColor" red="0.18999856709999999" green="0.18984112140000001" blue="0.24536219240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBar>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="x5g-gK-zDk">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-7Q-d4x">
+                                    <rect key="frame" x="8" y="15" width="38" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4nb-90-D0W">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x1D-H8-xWd">
+                                <rect key="frame" x="0.0" y="68.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4nb-90-D0W" id="EDN-bl-ifT">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1D-H8-xWd" id="9IY-Ci-saN">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ZPW-7g-gfm" id="zhp-XZ-XoS"/>
-                            <outlet property="delegate" destination="ZPW-7g-gfm" id="3NN-Zy-aNA"/>
+                            <outlet property="dataSource" destination="BcD-2R-UtQ" id="pOA-lM-wlb"/>
+                            <outlet property="delegate" destination="BcD-2R-UtQ" id="V0o-Zc-AzE"/>
                         </connections>
                     </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Feed" id="2ld-HT-gel"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="home-icon" id="cb3-jS-226"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VIc-dv-4jE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3B-qe-KKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="706"/>
+            <point key="canvasLocation" x="148" y="1663"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Je9-FO-scQ">
+        <!--Playlist-->
+        <scene sceneID="nk0-cP-6WG">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="zyu-HJ-I3U" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="qTb-uh-Q2y">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mgd-CU-hIB">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="ZPW-7g-gfm" kind="relationship" relationship="rootViewController" id="dzX-Me-72X"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hmR-jF-ZHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1732" y="-133"/>
-        </scene>
-        <!--Playlists-->
-        <scene sceneID="gQ6-bW-xFF">
-            <objects>
-                <viewController id="VsQ-8M-ESQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9rk-bc-gXG">
+                <tableViewController id="Fvb-Eo-OJ8" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="avg-ID-V1M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="kBa-GX-BA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Playlists" image="music" id="IEm-ug-VTz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lec-zB-il9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RvK-p6-2QP">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RvK-p6-2QP" id="Kpl-26-i0m">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fvb-Eo-OJ8" id="evb-iS-M9W"/>
+                            <outlet property="delegate" destination="Fvb-Eo-OJ8" id="sFT-oX-qY8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Playlist" image="music-icon" id="tin-41-f9Y"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMW-ZA-MEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="1663"/>
+            <point key="canvasLocation" x="972" y="1664"/>
         </scene>
-        <!--Feed-->
-        <scene sceneID="CnM-cL-qYe">
+        <!--Search-->
+        <scene sceneID="vAa-ze-nYi">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="MC2-Le-NrK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yfh-On-mHk">
+                <tableViewController id="lth-WI-bZD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zQY-BV-1KS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Q9v-OM-q7i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="home" id="o14-1B-G46"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Enb-MA-CRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GUJ-RZ-glc">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GUJ-RZ-glc" id="Kna-M5-teU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lth-WI-bZD" id="H42-AC-Pwt"/>
+                            <outlet property="delegate" destination="lth-WI-bZD" id="TGk-a7-W05"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-icon" id="hqS-Ka-GJI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAZ-rT-Lzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="1664"/>
+            <point key="canvasLocation" x="1730" y="1678"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FFt-Im-qx6">
@@ -170,8 +165,9 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="MC2-Le-NrK" kind="relationship" relationship="viewControllers" id="uJN-sM-wf8"/>
-                        <segue destination="VsQ-8M-ESQ" kind="relationship" relationship="viewControllers" id="Tkk-bd-fVt"/>
+                        <segue destination="BcD-2R-UtQ" kind="relationship" relationship="viewControllers" id="qei-w6-GfW"/>
+                        <segue destination="Fvb-Eo-OJ8" kind="relationship" relationship="viewControllers" id="O0A-dW-LN0"/>
+                        <segue destination="lth-WI-bZD" kind="relationship" relationship="viewControllers" id="P8C-Vw-dor"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ign-Po-SmV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -180,13 +176,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Spotifit logo" width="222" height="61"/>
-        <image name="home" width="28" height="31"/>
         <image name="home-icon" width="28" height="31"/>
-        <image name="music" width="31" height="31"/>
         <image name="music-icon" width="31" height="31"/>
         <image name="search-icon" width="35" height="35"/>
-        <image name="spotify logo" width="39" height="39"/>
+        <image name="spotifit-logo" width="222" height="61"/>
+        <image name="spotify-logo" width="39" height="39"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
