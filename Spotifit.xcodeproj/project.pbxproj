@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		192BDCF52653795B00B5E37A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */; };
 		2B0607A72654A57B00A2DCCD /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0607A62654A57B00A2DCCD /* SpotifyiOS.framework */; };
-		2B5A98C4265878CE00A25508 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A98C3265878CE00A25508 /* Constants.swift */; };
+		2B5A98C8265883A800A25508 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A98C7265883A800A25508 /* Constants.swift */; };
 		478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AC6EE265343BA00A835CA /* LoginViewController.swift */; };
 		479B520026532C170016126A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B51FF26532C170016126A /* AppDelegate.swift */; };
 		479B520226532C170016126A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B520126532C170016126A /* SceneDelegate.swift */; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		2B0607A62654A57B00A2DCCD /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
-		2B5A98C3265878CE00A25508 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B5A98C7265883A800A25508 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2B8D5DBB2654ABBE00B902F4 /* Spotifit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spotifit-Bridging-Header.h"; sourceTree = "<group>"; };
 		478AC6EE265343BA00A835CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		479B51FC26532C170016126A /* Spotifit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +144,7 @@
 				479B520A26532C180016126A /* LaunchScreen.storyboard */,
 				479B520D26532C180016126A /* Info.plist */,
 				478AC6EE265343BA00A835CA /* LoginViewController.swift */,
-				2B5A98C3265878CE00A25508 /* Constants.swift */,
+				2B5A98C7265883A800A25508 /* Constants.swift */,
 			);
 			path = Spotifit;
 			sourceTree = "<group>";
@@ -430,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5A98C4265878CE00A25508 /* Constants.swift in Sources */,
+				2B5A98C8265883A800A25508 /* Constants.swift in Sources */,
 				478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */,
 				479B520426532C170016126A /* ViewController.swift in Sources */,
 				479B520026532C170016126A /* AppDelegate.swift in Sources */,
