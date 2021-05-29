@@ -18,6 +18,8 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var bpmStepper: UIStepper!
     
     var pickerData: [String] = [String]() // Energy picker data
+    var bpmData: Int = 0 // BPM data to be passed to Spotify
+    var energyData: String = "" // Energy level data to be passed to Spotify
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,8 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.energyLevelPicker.delegate = self
         self.energyLevelPicker.dataSource = self
         
-        pickerData = ["Just Chilling", "Bicycle Pump", "Pretty pumped", "Pumped as hell!"] // Assign data
+        // Assign data
+        pickerData = ["Just Chilling", "Bicycle Pump", "Pretty pumped", "Pumped as hell!"]
 
         // Do any additional setup after loading the view.
     }
@@ -44,13 +47,22 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
 
         let energyLevel = pickerData[row]
+        energyData = energyLevel
         return NSAttributedString(string: energyLevel, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
     
     // Change BPM value
     @IBAction func bpmValueChanged(_ sender: UIStepper) {
         bpmValue.text = "\(Int(sender.value))"
+        bpmData = Int(sender.value)
     }
+    
+    @IBAction func onTapGoButton(_ sender: Any) {
+        print(energyData) // delete later
+        print(bpmData) // delete later
+        // To be implemented after figuring out API stuff
+    }
+    
     
     
     
