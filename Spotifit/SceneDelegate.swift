@@ -13,13 +13,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     lazy var rootViewController = ViewController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window!.makeKeyAndVisible()
-        window!.windowScene = windowScene
-        window!.rootViewController = rootViewController
+        guard let _ = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window!.makeKeyAndVisible()
+//        window!.windowScene = windowScene
+//        window!.rootViewController = rootViewController
+//        window!.resignKey()
         
-        //
+        // If user logged in, skip login screen
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//            window?.rootViewController = feedNavigationController
+//        }
     }
     
     //for spotify authorization and authentication flow
