@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window!.makeKeyAndVisible()
         window!.windowScene = windowScene
         window!.rootViewController = rootViewController
+        
+        //
     }
     
     //for spotify authorization and authentication flow

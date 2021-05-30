@@ -57,138 +57,138 @@ class ViewController: UIViewController {
     private var lastPlayerState: SPTAppRemotePlayerState?
 
     // MARK: - Subviews
-    private lazy var connectLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Connect your Spotify account"
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    private lazy var connectButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.contentEdgeInsets = UIEdgeInsets(top: 11.75, left: 32.0, bottom: 11.75, right: 32.0)
-        button.layer.cornerRadius = 20.0
-        button.setTitle("Continue with Spotify", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        button.sizeToFit()
-        button.addTarget(self, action: #selector(didTapConnect(_:)), for: .touchUpInside)
-        return button
-    }()
-    private lazy var disconnectButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.contentEdgeInsets = UIEdgeInsets(top: 11.75, left: 32.0, bottom: 11.75, right: 32.0)
-        button.layer.cornerRadius = 20.0
-        button.setTitle("Sign out", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        button.sizeToFit()
-        button.addTarget(self, action: #selector(didTapDisconnect(_:)), for: .touchUpInside)
-        return button
-    }()
-    private lazy var pauseAndPlayButton: UIButton = {
-        let button = UIButton()
-        button.addTarget(self, action: #selector(didTapPauseOrPlay), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.sizeToFit()
-        return button
-    }()
-    private lazy var imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    private lazy var trackLabel: UILabel = {
-        let trackLabel = UILabel()
-        trackLabel.translatesAutoresizingMaskIntoConstraints = false
-        trackLabel.textColor = .black
-        trackLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        trackLabel.textAlignment = .center
-        return trackLabel
-    }()
+//    private lazy var connectLabel: UILabel = {
+//        let label = UILabel()
+//        label.text = "Connect your Spotify account"
+//        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+//        label.textColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        return label
+//    }()
+//    private lazy var connectButton: UIButton = {
+//        let button = UIButton()
+//        button.backgroundColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.contentEdgeInsets = UIEdgeInsets(top: 11.75, left: 32.0, bottom: 11.75, right: 32.0)
+//        button.layer.cornerRadius = 20.0
+//        button.setTitle("Continue with Spotify", for: .normal)
+//        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+//        button.sizeToFit()
+//        button.addTarget(self, action: #selector(didTapConnect(_:)), for: .touchUpInside)
+//        return button
+//    }()
+//    private lazy var disconnectButton: UIButton = {
+//        let button = UIButton()
+//        button.backgroundColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.contentEdgeInsets = UIEdgeInsets(top: 11.75, left: 32.0, bottom: 11.75, right: 32.0)
+//        button.layer.cornerRadius = 20.0
+//        button.setTitle("Sign out", for: .normal)
+//        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+//        button.sizeToFit()
+//        button.addTarget(self, action: #selector(didTapDisconnect(_:)), for: .touchUpInside)
+//        return button
+//    }()
+//    private lazy var pauseAndPlayButton: UIButton = {
+//        let button = UIButton()
+//        button.addTarget(self, action: #selector(didTapPauseOrPlay), for: .touchUpInside)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.sizeToFit()
+//        return button
+//    }()
+//    private lazy var imageView: UIImageView = {
+//        let imageView = UIImageView()
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        imageView.contentMode = .scaleAspectFit
+//        return imageView
+//    }()
+//    private lazy var trackLabel: UILabel = {
+//        let trackLabel = UILabel()
+//        trackLabel.translatesAutoresizingMaskIntoConstraints = false
+//        trackLabel.textColor = .black
+//        trackLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+//        trackLabel.textAlignment = .center
+//        return trackLabel
+//    }()
 
     //MARK: App Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
+//        setupViews()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        updateViewBasedOnConnected()
+//        updateViewBasedOnConnected()
     }
     
     //MARK: Methods
-    func setupViews() {
-        view.backgroundColor = UIColor.white
-        view.addSubview(connectLabel)
-        view.addSubview(connectButton)
-        view.addSubview(disconnectButton)
-        view.addSubview(imageView)
-        view.addSubview(trackLabel)
-        view.addSubview(pauseAndPlayButton)
-        let constant: CGFloat = 16.0
-        connectButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        connectButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        disconnectButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        disconnectButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
-        connectLabel.centerXAnchor.constraint(equalTo: connectButton.centerXAnchor).isActive = true
-        connectLabel.bottomAnchor.constraint(equalTo: connectButton.topAnchor, constant: -constant).isActive = true
-        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 64).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: trackLabel.topAnchor, constant: -constant).isActive = true
-        trackLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        trackLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: constant).isActive = true
-        trackLabel.bottomAnchor.constraint(equalTo: connectLabel.topAnchor, constant: -constant).isActive = true
-        pauseAndPlayButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        pauseAndPlayButton.topAnchor.constraint(equalTo: trackLabel.bottomAnchor, constant: constant).isActive = true
-        pauseAndPlayButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        pauseAndPlayButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        updateViewBasedOnConnected()
-    }
+//    func setupViews() {
+//        view.backgroundColor = UIColor.white
+//        view.addSubview(connectLabel)
+//        view.addSubview(connectButton)
+//        view.addSubview(disconnectButton)
+//        view.addSubview(imageView)
+//        view.addSubview(trackLabel)
+//        view.addSubview(pauseAndPlayButton)
+//        let constant: CGFloat = 16.0
+//        connectButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        connectButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        disconnectButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        disconnectButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
+//        connectLabel.centerXAnchor.constraint(equalTo: connectButton.centerXAnchor).isActive = true
+//        connectLabel.bottomAnchor.constraint(equalTo: connectButton.topAnchor, constant: -constant).isActive = true
+//        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 64).isActive = true
+//        imageView.bottomAnchor.constraint(equalTo: trackLabel.topAnchor, constant: -constant).isActive = true
+//        trackLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        trackLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: constant).isActive = true
+//        trackLabel.bottomAnchor.constraint(equalTo: connectLabel.topAnchor, constant: -constant).isActive = true
+//        pauseAndPlayButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        pauseAndPlayButton.topAnchor.constraint(equalTo: trackLabel.bottomAnchor, constant: constant).isActive = true
+//        pauseAndPlayButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+//        pauseAndPlayButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//        updateViewBasedOnConnected()
+//    }
     
     func update(playerState: SPTAppRemotePlayerState) {
         if lastPlayerState?.track.uri != playerState.track.uri {
             fetchArtwork(for: playerState.track)
         }
         lastPlayerState = playerState
-        trackLabel.text = playerState.track.name
-        if playerState.isPaused {
-            pauseAndPlayButton.setImage(UIImage(named: "play"), for: .normal)
-        } else {
-            pauseAndPlayButton.setImage(UIImage(named: "pause"), for: .normal)
-        }
+//        trackLabel.text = playerState.track.name
+//        if playerState.isPaused {
+//            pauseAndPlayButton.setImage(UIImage(named: "play"), for: .normal)
+//        } else {
+//            pauseAndPlayButton.setImage(UIImage(named: "pause"), for: .normal)
+//        }
     }
 
-    func updateViewBasedOnConnected() {
-        if appRemote.isConnected == true {
-            connectButton.isHidden = true
-            disconnectButton.isHidden = false
-            connectLabel.isHidden = true
-            imageView.isHidden = false
-            trackLabel.isHidden = false
-            pauseAndPlayButton.isHidden = false
-        } else { //show login
-            disconnectButton.isHidden = true
-            connectButton.isHidden = false
-            connectLabel.isHidden = false
-            imageView.isHidden = true
-            trackLabel.isHidden = true
-            pauseAndPlayButton.isHidden = true
-        }
-    }
+//    func updateViewBasedOnConnected() {
+//        if appRemote.isConnected == true {
+//            connectButton.isHidden = true
+//            disconnectButton.isHidden = false
+//            connectLabel.isHidden = true
+//            imageView.isHidden = false
+//            trackLabel.isHidden = false
+//            pauseAndPlayButton.isHidden = false
+//        } else { //show login
+//            disconnectButton.isHidden = true
+//            connectButton.isHidden = false
+//            connectLabel.isHidden = false
+//            imageView.isHidden = true
+//            trackLabel.isHidden = true
+//            pauseAndPlayButton.isHidden = true
+//        }
+//    }
 
     func fetchArtwork(for track: SPTAppRemoteTrack) {
         appRemote.imageAPI?.fetchImage(forItem: track, with: CGSize.zero, callback: { [weak self] (image, error) in
             if let error = error {
                 print("Error fetching track image: " + error.localizedDescription)
             } else if let image = image as? UIImage {
-                self?.imageView.image = image
+//                self?.imageView.image = image
             }
         })
     }
@@ -204,30 +204,30 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Actions
-    @objc func didTapPauseOrPlay(_ button: UIButton) {
-        if let lastPlayerState = lastPlayerState, lastPlayerState.isPaused {
-            appRemote.playerAPI?.resume(nil)
-        } else {
-            appRemote.playerAPI?.pause(nil)
-        }
-    }
-
-    @objc func didTapDisconnect(_ button: UIButton) {
-        if appRemote.isConnected == true {
-            appRemote.disconnect()
-        }
-    }
-
-    @objc func didTapConnect(_ button: UIButton) {
-        guard let sessionManager = sessionManager else { return }
-        if #available(iOS 11, *) {
-            // Use this on iOS 11 and above to take advantage of SFAuthenticationSession
-            sessionManager.initiateSession(with: scopes, options: .clientOnly)
-        } else {
-            // Use this on iOS versions < 11 to use SFSafariViewController
-            sessionManager.initiateSession(with: scopes, options: .clientOnly, presenting: self)
-        }
-    }
+//    @objc func didTapPauseOrPlay(_ button: UIButton) {
+//        if let lastPlayerState = lastPlayerState, lastPlayerState.isPaused {
+//            appRemote.playerAPI?.resume(nil)
+//        } else {
+//            appRemote.playerAPI?.pause(nil)
+//        }
+//    }
+//
+//    @objc func didTapDisconnect(_ button: UIButton) {
+//        if appRemote.isConnected == true {
+//            appRemote.disconnect()
+//        }
+//    }
+//
+//    @objc func didTapConnect(_ button: UIButton) {
+//        guard let sessionManager = sessionManager else { return }
+//        if #available(iOS 11, *) {
+//            // Use this on iOS 11 and above to take advantage of SFAuthenticationSession
+//            sessionManager.initiateSession(with: scopes, options: .clientOnly)
+//        } else {
+//            // Use this on iOS versions < 11 to use SFSafariViewController
+//            sessionManager.initiateSession(with: scopes, options: .clientOnly, presenting: self)
+//        }
+//    }
 
     // MARK: - Private Helpers
     private func presentAlertController(title: String, message: String, buttonTitle: String) {
@@ -283,7 +283,7 @@ class ViewController: UIViewController {
 // MARK: - SPTAppRemoteDelegate
 extension ViewController: SPTAppRemoteDelegate {
     func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
-        updateViewBasedOnConnected()
+//        updateViewBasedOnConnected()
         appRemote.playerAPI?.delegate = self
         appRemote.playerAPI?.subscribe(toPlayerState: { (success, error) in
             if let error = error {
@@ -294,12 +294,12 @@ extension ViewController: SPTAppRemoteDelegate {
     }
 
     func appRemote(_ appRemote: SPTAppRemote, didDisconnectWithError error: Error?) {
-        updateViewBasedOnConnected()
+//        updateViewBasedOnConnected()
         lastPlayerState = nil
     }
 
     func appRemote(_ appRemote: SPTAppRemote, didFailConnectionAttemptWithError error: Error?) {
-        updateViewBasedOnConnected()
+//        updateViewBasedOnConnected()
         lastPlayerState = nil
     }
 }
