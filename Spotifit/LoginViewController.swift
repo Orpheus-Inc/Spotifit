@@ -23,7 +23,6 @@ class LoginViewController: UIViewController {
     
     @IBAction func spotifyLoginButtonAction(_ sender: UIButton) {
         spotifyAuthVC()
-        print("Moved from above.")
     }
     
     var webView = WKWebView()
@@ -126,25 +125,26 @@ extension LoginViewController: WKNavigationDelegate {
             let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
                 if error == nil {
                     let result = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyHashable: Any]
+                    
                     //AccessToken
                     print("Spotify Access Token: \(accessToken)")
-//                    self.spotifyAccessToken = accessToken
                     self.defaults.set(accessToken, forKey: "spotifyAccessToken")
+                    
                     //Spotify Handle
                     let spotifyId: String! = (result?["id"] as! String)
                     print("Spotify Id: \(spotifyId ?? "")")
-//                    self.spotifyId = spotifyId
                     self.defaults.set(spotifyId, forKey: "spotifyId")
+                    
                     //Spotify Display Name
                     let spotifyDisplayName: String! = (result?["display_name"] as! String)
                     print("Spotify Display Name: \(spotifyDisplayName ?? "")")
-//                    self.spotifyDisplayName = spotifyDisplayName
                     self.defaults.set(spotifyDisplayName, forKey: "spotifyDisplayName")
+                    
                     //Spotify Email
                     let spotifyEmail: String! = (result?["email"] as! String)
                     print("Spotify Email: \(spotifyEmail ?? "")")
-//                    self.spotifyEmail = spotifyEmail
                     self.defaults.set(spotifyEmail, forKey: "spotifyEmail")
+                    
                     //Spotify Profile Avatar URL
                     let spotifyAvatarURL: String!
                     let spotifyProfilePicArray = result?["images"] as? [AnyObject]
@@ -154,7 +154,6 @@ extension LoginViewController: WKNavigationDelegate {
                         spotifyAvatarURL = "Not exists"
                     }
                     print("Spotify Profile Avatar URL: \(spotifyAvatarURL ?? "")")
-//                    self.spotifyAvatarURL = spotifyAvatarURL
                     self.defaults.set(spotifyAvatarURL, forKey: "spotifyAvatarURL")
                 }
                 //Parse
