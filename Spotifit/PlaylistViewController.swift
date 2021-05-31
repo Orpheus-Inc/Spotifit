@@ -18,7 +18,7 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var bpmStepper: UIStepper!
     
     var pickerData: [String] = [String]() // Energy picker data
-    var bpmData: Int = 0 // BPM data to be passed to Spotify
+    var bpmData: Int = 100 // BPM data to be passed to Spotify
     var energyData: String = "" // Energy level data to be passed to Spotify
     
     override func viewDidLoad() {
