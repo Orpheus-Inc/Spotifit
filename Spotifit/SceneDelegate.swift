@@ -22,6 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UIApplicationDelegate {
         
         if PFUser.current() != nil {
 //            print("User: ", self.defaults.string(forKey: "spotifyDisplayName")!, " Access Token: ", self.defaults.string(forKey: "spotifyAccessToken")!)
+            
+            //TODO: Add check for expired token and logout if expired
+            
             let main = UIStoryboard(name: "Main", bundle: nil)
             let TabBarViewController = main.instantiateViewController(withIdentifier: "TabBarViewController")
             window?.rootViewController = TabBarViewController
