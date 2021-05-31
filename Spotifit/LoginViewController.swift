@@ -12,6 +12,12 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var spotifyLoginButton: UIButton!
     
+    var spotifyId = ""
+    var spotifyDisplayName = ""
+    var spotifyEmail = ""
+    var spotifyAvatarURL = ""
+    var spotifyAccessToken = ""
+    
     @IBAction func spotifyLoginButtonAction(_ sender: UIButton) {
         spotifyAuthVC()
     }
@@ -124,15 +130,19 @@ extension LoginViewController: WKNavigationDelegate {
                     let result = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyHashable: Any]
                     //AccessToken
                     print("Spotify Access Token: \(accessToken)")
+                    self.spotifyAccessToken = accessToken
                     //Spotify Handle
                     let spotifyId: String! = (result?["id"] as! String)
                     print("Spotify Id: \(spotifyId ?? "")")
+                    self.spotifyId = spotifyId
                     //Spotify Display Name
                     let spotifyDisplayName: String! = (result?["display_name"] as! String)
                     print("Spotify Display Name: \(spotifyDisplayName ?? "")")
+                    self.spotifyDisplayName = spotifyDisplayName
                     //Spotify Email
                     let spotifyEmail: String! = (result?["email"] as! String)
                     print("Spotify Email: \(spotifyEmail ?? "")")
+                    self.spotifyEmail = spotifyEmail
                     //Spotify Profile Avatar URL
                     let spotifyAvatarURL: String!
                     let spotifyProfilePicArray = result?["images"] as? [AnyObject]
@@ -142,6 +152,7 @@ extension LoginViewController: WKNavigationDelegate {
                         spotifyAvatarURL = "Not exists"
                     }
                     print("Spotify Profile Avatar URL: \(spotifyAvatarURL ?? "")")
+                    self.spotifyAvatarURL = spotifyAvatarURL
                 }
             }
             task.resume()
