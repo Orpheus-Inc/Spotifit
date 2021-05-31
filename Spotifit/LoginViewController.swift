@@ -116,7 +116,9 @@ extension LoginViewController: WKNavigationDelegate {
             fetchSpotifyProfile(accessToken: spotifyAccessToken)
 
             // Close Spotify Auth ViewController after getting Access Token
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: {
+                self.performSegue(withIdentifier: "loginToHome", sender: self) // go to home
+            })
         }
 
 

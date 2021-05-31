@@ -59,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="spotifyLoginButton" destination="KkS-rh-quH" id="E8f-fo-M7I"/>
+                        <segue destination="gYv-Pn-ryd" kind="presentation" identifier="loginToHome" id="BvQ-wX-77v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
