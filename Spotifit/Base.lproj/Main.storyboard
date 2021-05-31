@@ -37,7 +37,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="spotifyLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgA-fD-Cvm"/>
-                                    <segue destination="gYv-Pn-ryd" kind="presentation" identifier="loginSegue" id="oCG-J3-BfW"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="spotifit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
@@ -50,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="spotifyLoginButton" destination="KkS-rh-quH" id="E8f-fo-M7I"/>
+                        <segue destination="gYv-Pn-ryd" kind="presentation" identifier="loginSegue" id="q1g-y5-byq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,6 +94,8 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Feed" image="home-icon" id="cb3-jS-226"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3B-qe-KKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,7 +221,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="FFt-Im-qx6">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" modalPresentationStyle="fullScreen" id="gYv-Pn-ryd" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" modalPresentationStyle="fullScreen" id="gYv-Pn-ryd" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5Az-9e-cVi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
