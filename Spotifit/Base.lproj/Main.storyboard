@@ -36,7 +36,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="gYv-Pn-ryd" kind="presentation" id="Gca-3w-31O"/>
+                                    <action selector="spotifyLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgA-fD-Cvm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="spotifit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
@@ -47,6 +47,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="spotifyLoginButton" destination="KkS-rh-quH" id="E8f-fo-M7I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
