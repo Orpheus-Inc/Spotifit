@@ -10,6 +10,7 @@
 		192BDCF52653795B00B5E37A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */; };
 		19FA37C0265AD1420098632D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA37BF265AD1420098632D /* PlaylistViewController.swift */; };
 		2B6B64EE2664C66F008C924A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B64ED2664C66F008C924A /* Constants.swift */; };
+		2D931473770480E3D756A4F2 /* Pods_Spotifit_SpotifitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A699ED4305B0C69E755BBEC5 /* Pods_Spotifit_SpotifitUITests.framework */; };
 		478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AC6EE265343BA00A835CA /* LoginViewController.swift */; };
 		479B520026532C170016126A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B51FF26532C170016126A /* AppDelegate.swift */; };
 		479B520226532C170016126A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B520126532C170016126A /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 		479B520C26532C180016126A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479B520A26532C180016126A /* LaunchScreen.storyboard */; };
 		479B521726532C180016126A /* SpotifitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B521626532C180016126A /* SpotifitTests.swift */; };
 		479B522226532C180016126A /* SpotifitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B522126532C180016126A /* SpotifitUITests.swift */; };
+		A8AF7D819EA6827590990F08 /* Pods_SpotifitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D1A9C93532C64E18236D1E /* Pods_SpotifitTests.framework */; };
 		D349B553E92DFC0D6E904B47 /* Pods_Spotifit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F76624280985045F3C3E0D1 /* Pods-Spotifit-SpotifitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit-SpotifitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D1A9C93532C64E18236D1E /* Pods_SpotifitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A699ED4305B0C69E755BBEC5 /* Pods_Spotifit_SpotifitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotifit_SpotifitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3BE017399A64A78A5F6EBF /* Pods-Spotifit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit.release.xcconfig"; path = "Target Support Files/Pods-Spotifit/Pods-Spotifit.release.xcconfig"; sourceTree = "<group>"; };
 		D38D607A8B0CBFADB58BEF35 /* Pods-Spotifit-SpotifitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit-SpotifitUITests.release.xcconfig"; path = "Target Support Files/Pods-Spotifit-SpotifitUITests/Pods-Spotifit-SpotifitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotifit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8AF7D819EA6827590990F08 /* Pods_SpotifitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D931473770480E3D756A4F2 /* Pods_Spotifit_SpotifitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */,
+				A699ED4305B0C69E755BBEC5 /* Pods_Spotifit_SpotifitUITests.framework */,
+				A0D1A9C93532C64E18236D1E /* Pods_SpotifitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

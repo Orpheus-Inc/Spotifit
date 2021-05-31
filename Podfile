@@ -7,6 +7,7 @@ target 'Spotifit' do
 
   # Pods for Spotifit
   pod 'AlamofireImage'
+  pod 'Parse'  
 
   target 'SpotifitTests' do
     inherit! :search_paths

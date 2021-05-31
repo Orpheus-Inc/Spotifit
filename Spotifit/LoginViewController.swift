@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -155,6 +156,34 @@ extension LoginViewController: WKNavigationDelegate {
                     self.spotifyAvatarURL = spotifyAvatarURL
                 }
             }
+            
+            //Parse
+            //LogIn
+            PFUser.logInWithUsername(inBackground: self.spotifyEmail, password: "spotifit") {
+                (user, error) in
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else {
+                    print("Could not login: ", error!.localizedDescription)
+                    
+                    //SignUp
+                    print("Creating a new user...")
+                    let user = PFUser()
+                    user.username = self.spotifyEmail
+                    user.password = "spotifit"
+                    user.setObject([], forKey: "playlists")
+                    
+                    user.signUpInBackground { (success, error) in
+                        if success {
+                            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                        } else {
+                            print("Could not login from sign up: ", error!.localizedDescription)
+                        }
+                    }
+                    
+                }
+            }
+            
             task.resume()
         }
 }
