@@ -13,11 +13,13 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var spotifyLoginButton: UIButton!
     
-    var spotifyId = ""
-    var spotifyDisplayName = ""
-    var spotifyEmail = ""
-    var spotifyAvatarURL = ""
-    var spotifyAccessToken = ""
+    let defaults = UserDefaults.standard
+    
+//    public var spotifyId = ""
+//    public var spotifyDisplayName = ""
+//    public var spotifyEmail = ""
+//    public var spotifyAvatarURL = ""
+//    public var spotifyAccessToken = ""
     
     @IBAction func spotifyLoginButtonAction(_ sender: UIButton) {
         spotifyAuthVC()
@@ -131,19 +133,23 @@ extension LoginViewController: WKNavigationDelegate {
                     let result = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyHashable: Any]
                     //AccessToken
                     print("Spotify Access Token: \(accessToken)")
-                    self.spotifyAccessToken = accessToken
+//                    self.spotifyAccessToken = accessToken
+                    self.defaults.set(accessToken, forKey: "spotifyAccessToken")
                     //Spotify Handle
                     let spotifyId: String! = (result?["id"] as! String)
                     print("Spotify Id: \(spotifyId ?? "")")
-                    self.spotifyId = spotifyId
+//                    self.spotifyId = spotifyId
+                    self.defaults.set(spotifyId, forKey: "spotifyId")
                     //Spotify Display Name
                     let spotifyDisplayName: String! = (result?["display_name"] as! String)
                     print("Spotify Display Name: \(spotifyDisplayName ?? "")")
-                    self.spotifyDisplayName = spotifyDisplayName
+//                    self.spotifyDisplayName = spotifyDisplayName
+                    self.defaults.set(spotifyDisplayName, forKey: "spotifyDisplayName")
                     //Spotify Email
                     let spotifyEmail: String! = (result?["email"] as! String)
                     print("Spotify Email: \(spotifyEmail ?? "")")
-                    self.spotifyEmail = spotifyEmail
+//                    self.spotifyEmail = spotifyEmail
+                    self.defaults.set(spotifyEmail, forKey: "spotifyEmail")
                     //Spotify Profile Avatar URL
                     let spotifyAvatarURL: String!
                     let spotifyProfilePicArray = result?["images"] as? [AnyObject]
@@ -153,13 +159,14 @@ extension LoginViewController: WKNavigationDelegate {
                         spotifyAvatarURL = "Not exists"
                     }
                     print("Spotify Profile Avatar URL: \(spotifyAvatarURL ?? "")")
-                    self.spotifyAvatarURL = spotifyAvatarURL
+//                    self.spotifyAvatarURL = spotifyAvatarURL
+                    self.defaults.set(spotifyAvatarURL, forKey: "spotifyAvatarURL")
                 }
             }
             
             //Parse
             //LogIn
-            PFUser.logInWithUsername(inBackground: self.spotifyEmail, password: "spotifit") {
+            PFUser.logInWithUsername(inBackground: self.defaults.string(forKey: "spotifyEmail")!, password: "spotifit") {
                 (user, error) in
                 if user != nil {
                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
@@ -169,7 +176,7 @@ extension LoginViewController: WKNavigationDelegate {
                     //SignUp
                     print("Creating a new user...")
                     let user = PFUser()
-                    user.username = self.spotifyEmail
+                    user.username = self.defaults.string(forKey: "spotifyEmail")!
                     user.password = "spotifit"
                     user.setObject([], forKey: "playlists")
                     
