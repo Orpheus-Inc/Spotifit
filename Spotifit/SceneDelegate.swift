@@ -21,9 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UIApplicationDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         if PFUser.current() != nil {
-            print("User: ", self.defaults.string(forKey: "spotifyDisplayName")!, " Access Token: ", self.defaults.string(forKey: "spotifyAccessToken")!)
-
-
+//            print("User: ", self.defaults.string(forKey: "spotifyDisplayName")!, " Access Token: ", self.defaults.string(forKey: "spotifyAccessToken")!)
             let main = UIStoryboard(name: "Main", bundle: nil)
             let TabBarViewController = main.instantiateViewController(withIdentifier: "TabBarViewController")
             window?.rootViewController = TabBarViewController
