@@ -33,6 +33,10 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Do any additional setup after loading the view.
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // Number of columns in picker
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
