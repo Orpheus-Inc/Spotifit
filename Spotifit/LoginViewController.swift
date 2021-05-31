@@ -157,8 +157,6 @@ extension LoginViewController: WKNavigationDelegate {
 //                    self.spotifyAvatarURL = spotifyAvatarURL
                     self.defaults.set(spotifyAvatarURL, forKey: "spotifyAvatarURL")
                 }
-                
-                
                 //Parse
                 //LogIn
                 PFUser.logInWithUsername(inBackground: self.defaults.string(forKey: "spotifyEmail")!, password: "spotifit") {
@@ -185,7 +183,6 @@ extension LoginViewController: WKNavigationDelegate {
 
                     }
                 }
-                print("Moved past Parse auth")
             }
             task.resume()
         }

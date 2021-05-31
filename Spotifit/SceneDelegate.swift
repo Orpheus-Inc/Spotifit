@@ -20,14 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UIApplicationDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-//        if PFUser.current() != nil {
-//            print("User: ", self.defaults.string(forKey: "spotifyDisplayName")!, " Access Token: ", self.defaults.string(forKey: "spotifyAccessToken")!)
-//
-//
-//            let main = UIStoryboard(name: "Main", bundle: nil)
-//            let TabBarController = main.instantiateViewController(withIdentifier: "TabBarController")
-//            window?.rootViewController = TabBarController
-//        }
+        if PFUser.current() != nil {
+            print("User: ", self.defaults.string(forKey: "spotifyDisplayName")!, " Access Token: ", self.defaults.string(forKey: "spotifyAccessToken")!)
+
+
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let TabBarViewController = main.instantiateViewController(withIdentifier: "TabBarViewController")
+            window?.rootViewController = TabBarViewController
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
