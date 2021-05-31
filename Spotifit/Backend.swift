@@ -5,6 +5,7 @@
 //  Created by Cameron Sherry on 5/31/21.
 //
 
+import WebKit
 import Foundation
 
 let defaults = UserDefaults.standard
@@ -31,17 +32,22 @@ func buildURL(url: String) -> URLRequest {
     return request
 }
 
-func get_personalized_data(option: String) {
-    let urlString = api_url + "me/top/" + option + "/"
+func initiateRequest(request: URLRequest) -> [AnyHashable: Any] {
+    var d: [AnyHashable: Any] = [:]
     
-    let url = buildURL(url: urlString)
-    
-    let task = URLSession.shared.dataTask(with: url) {
-        (data, response, error) in
-        guard let data = data else { return }
-        print("RESPONSE:", response ?? "No reponse")
-        print("DATA:", String(data: data, encoding: .utf8)!)
+    let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
+        if error == nil {
+            print("RESPONSE: ", response!)
+            d = try! (JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyHashable: Any])!
+        }
     }
     task.resume()
     
+    return d
+}
+
+func get_personalized_data(option: String) {
+    let urlString = api_url + "me/top/" + option + "/"
+    let url = buildURL(url: urlString)
+    print(initiateRequest(request: url))
 }
