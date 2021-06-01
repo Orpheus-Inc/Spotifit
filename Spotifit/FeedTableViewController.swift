@@ -27,7 +27,7 @@ class FeedTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "playlist")
-        query.includeKeys(["coverPic", "playlistBPM", "playlistCreatorDisplayName", "playlistName", "playlistEnergy"])
+        query.includeKeys(["coverPic", "bpmValue", "playlistCreatorDisplayName", "playlistName", "playlistEnergy"])
         query.limit = 20
         
         query.findObjectsInBackground { playlists, error in
@@ -64,6 +64,7 @@ class FeedTableViewController: UITableViewController {
         
         cell.playlistAuthor.text = playlist["playlistCreatorDisplayName"] as! String
         cell.playlistName.text = playlist["playlistName"] as! String
+        cell.bpmValue.text = playlist["bpmValue"] as! String
         
         let imageFile = playlist["coverPic"] as! PFFileObject
         let urlString = imageFile.url!

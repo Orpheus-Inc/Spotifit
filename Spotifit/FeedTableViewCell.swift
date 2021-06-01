@@ -13,9 +13,9 @@ class FeedTableViewCell: UITableViewCell {
     
     @IBOutlet weak var playlistName: UILabel!
     
-    
     @IBOutlet weak var playlistAuthor: UILabel!
     
+    @IBOutlet weak var bpmValue: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

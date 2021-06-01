@@ -128,9 +128,16 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3E-6i-Gd7">
+                                            <rect key="frame" x="147" y="103" width="42" height="26"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="o3E-6i-Gd7" secondAttribute="bottom" constant="23" id="2ob-Ow-bmw"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Dq3-pn-qDw" secondAttribute="bottom" constant="23" id="IdO-7l-qCL"/>
                                         <constraint firstItem="6Zj-V6-R5L" firstAttribute="trailing" secondItem="9IY-Ci-saN" secondAttribute="trailingMargin" id="NCs-FU-EVN"/>
                                         <constraint firstItem="Dq3-pn-qDw" firstAttribute="top" secondItem="9IY-Ci-saN" secondAttribute="topMargin" constant="13" id="Up4-MG-ych"/>
@@ -138,9 +145,11 @@
                                         <constraint firstItem="x3l-wi-w6S" firstAttribute="top" secondItem="9IY-Ci-saN" secondAttribute="top" constant="39" id="bEc-06-swb"/>
                                         <constraint firstItem="Dq3-pn-qDw" firstAttribute="leading" secondItem="9IY-Ci-saN" secondAttribute="leadingMargin" id="cNB-Xl-kFs"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="6Zj-V6-R5L" secondAttribute="bottom" constant="23" id="cQJ-ri-7gF"/>
+                                        <constraint firstItem="o3E-6i-Gd7" firstAttribute="leading" secondItem="Dq3-pn-qDw" secondAttribute="trailing" constant="22" id="j8B-KK-M1x"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="bpmValue" destination="o3E-6i-Gd7" id="sEg-LF-0PF"/>
                                     <outlet property="coverImage" destination="Dq3-pn-qDw" id="FbB-2g-kal"/>
                                     <outlet property="playlistAuthor" destination="6Zj-V6-R5L" id="RBC-Xr-OAa"/>
                                     <outlet property="playlistName" destination="x3l-wi-w6S" id="onS-Sj-cy7"/>
