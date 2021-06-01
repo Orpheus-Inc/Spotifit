@@ -22,9 +22,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+
                             <constraint firstItem="8QA-xC-FGS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="KdD-aA-Nqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8QA-xC-FGS" secondAttribute="trailing" constant="96" id="Urx-Uz-8n8"/>
                             <constraint firstItem="8QA-xC-FGS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="231" id="tMq-ox-KCd"/>
+
                         </constraints>
                     </view>
                 </viewController>

@@ -76,6 +76,16 @@ class LoginViewController: UIViewController {
         self.webView.reload()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginToHome", sender: self) // go to home
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -117,7 +127,10 @@ extension LoginViewController: WKNavigationDelegate {
             fetchSpotifyProfile(accessToken: spotifyAccessToken)
 
             // Close Spotify Auth ViewController after getting Access Token
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: {
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
+                self.performSegue(withIdentifier: "loginToHome", sender: self) // go to home
+            })
         }
 
 

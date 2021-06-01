@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		192BDCF52653795B00B5E37A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */; };
+
 		194FFE1C26668BCC00272B3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FFE1B26668BCC00272B3D /* Constants.swift */; };
 		194FFE1E2666915300272B3D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FFE1D2666915300272B3D /* SearchViewController.swift */; };
 		19FA37C0265AD1420098632D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA37BF265AD1420098632D /* PlaylistViewController.swift */; };
 		2B6B64F026657D83008C924A /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B64EF26657D83008C924A /* Backend.swift */; };
 		2D931473770480E3D756A4F2 /* Pods_Spotifit_SpotifitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A699ED4305B0C69E755BBEC5 /* Pods_Spotifit_SpotifitUITests.framework */; };
+
 		478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AC6EE265343BA00A835CA /* LoginViewController.swift */; };
 		479B520026532C170016126A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B51FF26532C170016126A /* AppDelegate.swift */; };
 		479B520226532C170016126A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B520126532C170016126A /* SceneDelegate.swift */; };
@@ -45,10 +47,12 @@
 
 /* Begin PBXFileReference section */
 		192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+
 		194FFE1B26668BCC00272B3D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		194FFE1D2666915300272B3D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		19FA37BF265AD1420098632D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		2B6B64EF26657D83008C924A /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+
 		478AC6EE265343BA00A835CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		479B51FC26532C170016126A /* Spotifit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479B51FF26532C170016126A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,9 +150,11 @@
 				479B520D26532C180016126A /* Info.plist */,
 				478AC6EE265343BA00A835CA /* LoginViewController.swift */,
 				19FA37BF265AD1420098632D /* PlaylistViewController.swift */,
+
 				194FFE1B26668BCC00272B3D /* Constants.swift */,
 				2B6B64EF26657D83008C924A /* Backend.swift */,
 				194FFE1D2666915300272B3D /* SearchViewController.swift */,
+
 			);
 			path = Spotifit;
 			sourceTree = "<group>";
@@ -438,9 +444,12 @@
 				194FFE1E2666915300272B3D /* SearchViewController.swift in Sources */,
 				479B520426532C170016126A /* ViewController.swift in Sources */,
 				479B520026532C170016126A /* AppDelegate.swift in Sources */,
+				193383DD2665710100AA8E1D /* Constants.swift in Sources */,
 				479B520226532C170016126A /* SceneDelegate.swift in Sources */,
+
 				2B6B64F026657D83008C924A /* Backend.swift in Sources */,
 				194FFE1C26668BCC00272B3D /* Constants.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
