@@ -18,13 +18,13 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var bpmStepper: UIStepper!
     
     var pickerData: [String] = [String]() // Energy picker data
-    var bpmData: Int = 0 // BPM data to be passed to Spotify
+    var bpmData: Int = 100 // BPM data to be passed to Spotify
     var energyData: String = "" // Energy level data to be passed to Spotify
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let test = get_complete_playlist(energy: 3, tempo: 150)
+        let test: () = get_complete_playlist(energy: 3, tempo: 150)
         print(test)
         
         self.energyLevelPicker.delegate = self
@@ -34,6 +34,10 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         pickerData = ["Just Chilling", "Bicycle Pump", "Pretty pumped", "Pumped as hell!"]
 
         // Do any additional setup after loading the view.
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // Number of columns in picker
