@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
 class FeedTableViewController: UITableViewController {
+    
+    var playlists = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,21 @@ class FeedTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "playlist")
+        query.includeKeys(["coverPic", "playlistBPM", "playlistCreatorDisplayName", "playlistName", "playlistEnergy"])
+        query.limit = 20
+        
+        query.findObjectsInBackground { playlists, error in
+            if playlists != nil {
+                self.playlists = playlists!
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -32,14 +51,28 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return playlists.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let playlist = playlists[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as! FeedTableViewCell
-        cell.playlistName.text = "playlistName"
-        cell.playlistAuthor.text = "Made by userName"
+//        cell.playlistName.text = "playlistName"
+//        cell.playlistAuthor.text = "Made by userName"
+        
+        cell.playlistAuthor.text = playlist["playlistCreatorDisplayName"] as! String
+        cell.playlistName.text = playlist["playlistName"] as! String
+        
+        let imageFile = playlist["coverPic"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        cell.coverImage.af_setImage(withURL: url)
+//        let imageFile = post["image"] as! PFFileObject
+//        let urlString = imageFile.url!
+//        let url = URL(string: urlString)!
+//        cell.photoView.af_setImage(withURL: url)
         
         return cell
     }

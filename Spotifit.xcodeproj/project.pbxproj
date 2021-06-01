@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		192BDCF52653795B00B5E37A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */; };
+		19373DA52666EB5B0014CD23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19373DA42666EB5B0014CD23 /* Constants.swift */; };
 		194CBFDB2666B6F300126ED2 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194CBFDA2666B6F300126ED2 /* FeedTableViewController.swift */; };
-		194CBFE12666B79B00126ED2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194CBFE02666B79B00126ED2 /* Constants.swift */; };
 		194CBFE52666BD1E00126ED2 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194CBFE42666BD1E00126ED2 /* FeedTableViewCell.swift */; };
 		194FFE1E2666915300272B3D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FFE1D2666915300272B3D /* SearchViewController.swift */; };
 		19FA37C0265AD1420098632D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA37BF265AD1420098632D /* PlaylistViewController.swift */; };
@@ -47,8 +47,8 @@
 
 /* Begin PBXFileReference section */
 		192BDCF42653795B00B5E37A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		19373DA42666EB5B0014CD23 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		194CBFDA2666B6F300126ED2 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
-		194CBFE02666B79B00126ED2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		194CBFE42666BD1E00126ED2 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		194FFE1D2666915300272B3D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		19FA37BF265AD1420098632D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 				478AC6EE265343BA00A835CA /* LoginViewController.swift */,
 				19FA37BF265AD1420098632D /* PlaylistViewController.swift */,
 				2B6B64EF26657D83008C924A /* Backend.swift */,
-				194CBFE02666B79B00126ED2 /* Constants.swift */,
 				194FFE1D2666915300272B3D /* SearchViewController.swift */,
+				19373DA42666EB5B0014CD23 /* Constants.swift */,
 				194CBFDA2666B6F300126ED2 /* FeedTableViewController.swift */,
 				194CBFE42666BD1E00126ED2 /* FeedTableViewCell.swift */,
 			);
@@ -443,8 +443,8 @@
 				19FA37C0265AD1420098632D /* PlaylistViewController.swift in Sources */,
 				194FFE1E2666915300272B3D /* SearchViewController.swift in Sources */,
 				479B520426532C170016126A /* ViewController.swift in Sources */,
-				194CBFE12666B79B00126ED2 /* Constants.swift in Sources */,
 				479B520026532C170016126A /* AppDelegate.swift in Sources */,
+				19373DA52666EB5B0014CD23 /* Constants.swift in Sources */,
 				479B520226532C170016126A /* SceneDelegate.swift in Sources */,
 				194CBFDB2666B6F300126ED2 /* FeedTableViewController.swift in Sources */,
 				2B6B64F026657D83008C924A /* Backend.swift in Sources */,
