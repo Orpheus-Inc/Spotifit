@@ -41,7 +41,7 @@ An app that generates a music playlist based on workout conditions specified by 
 **Required Must-have Stories**
 - [X] User can navigate between Feed, Playlists, and Search screens
 - [X] User can login/logout with their personal Spotify account
-- [ ] User can create a playlist using the following parameters:
+- [X] User can create a playlist using the following parameters:
     - BPM (for running it would be cadence)
     - Energy level (how pumped the playlist should be)
 - [ ] User can stream music from the playlists, within the app
