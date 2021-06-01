@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
                                 <rect key="frame" x="55" y="456" width="304" height="60"/>
                                 <color key="backgroundColor" red="0.2651622891" green="0.72432678939999995" blue="0.32741868499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KkS-rh-quH" firstAttribute="top" secondItem="3um-29-v66" secondAttribute="bottom" constant="161" id="I4i-l8-SZo"/>
                             <constraint firstItem="3um-29-v66" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="OCV-nb-ktv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KkS-rh-quH" secondAttribute="trailing" constant="55" id="UxQ-7l-fas"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3um-29-v66" secondAttribute="trailing" constant="96" id="YLF-a7-bvr"/>
