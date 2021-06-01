@@ -41,6 +41,7 @@ An app that generates a music playlist based on workout conditions specified by 
 **Required Must-have Stories**
 - [X] User can navigate between Feed, Playlists, and Search screens
 - [X] User can login/logout with their personal Spotify account
+- [X] User can keep login
 - [ ] User can create a playlist using the following parameters:
     - BPM (for running it would be cadence)
     - Energy level (how pumped the playlist should be)
@@ -170,4 +171,8 @@ GIF Walkthrough:
 #### Progress Unit 8
 
 ![unit8](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/Kapture%202021-05-24%20at%2023.14.44.gif)
+
+#### Progress Unit 9
+
+![Unit9](https://raw.githubusercontent.com/sundries-hub/LifeReviewFile/master/uPic/RPReplay_Final1622527045.gif)
 
