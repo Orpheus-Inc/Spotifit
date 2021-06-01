@@ -27,7 +27,7 @@ class FeedTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "playlist")
-        query.includeKeys(["coverPic", "bpmValue", "playlistCreatorDisplayName", "playlistName", "playlistEnergy"])
+        query.includeKeys(["coverPic", "bpmValue", "playlistCreatorDisplayName", "playlistName", "playlistEnergy", "playlistURL"])
         query.limit = 20
         
         query.findObjectsInBackground { playlists, error in
@@ -78,6 +78,20 @@ class FeedTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let playlist = playlists[indexPath.row]
+        let playlistLink = playlist["playlistURL"] as! String
+        
+        if let url = URL(string: playlistLink) {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+        
+    }
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -124,4 +138,7 @@ class FeedTableViewController: UITableViewController {
     }
     */
 
+    
 }
+
+
