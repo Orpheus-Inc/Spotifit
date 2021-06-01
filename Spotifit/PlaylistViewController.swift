@@ -24,7 +24,8 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        get_personalized_data(option: "tracks")
+        let test = get_complete_playlist(energy: 3, tempo: 150)
+        print(test)
         
         self.energyLevelPicker.delegate = self
         self.energyLevelPicker.dataSource = self
