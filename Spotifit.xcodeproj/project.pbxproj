@@ -22,6 +22,7 @@
 		479B520C26532C180016126A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479B520A26532C180016126A /* LaunchScreen.storyboard */; };
 		479B521726532C180016126A /* SpotifitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B521626532C180016126A /* SpotifitTests.swift */; };
 		479B522226532C180016126A /* SpotifitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B522126532C180016126A /* SpotifitUITests.swift */; };
+		47A4FF1D2666AED000639944 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A4FF1C2666AED000639944 /* FeedViewController.swift */; };
 		A8AF7D819EA6827590990F08 /* Pods_SpotifitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D1A9C93532C64E18236D1E /* Pods_SpotifitTests.framework */; };
 		D349B553E92DFC0D6E904B47 /* Pods_Spotifit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB67B31E787C293E6D67055 /* Pods_Spotifit.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		479B521D26532C180016126A /* SpotifitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		479B522126532C180016126A /* SpotifitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifitUITests.swift; sourceTree = "<group>"; };
 		479B522326532C180016126A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A4FF1C2666AED000639944 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		55361F56FC12764C8EA2AC80 /* Pods-Spotifit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifit.debug.xcconfig"; path = "Target Support Files/Pods-Spotifit/Pods-Spotifit.debug.xcconfig"; sourceTree = "<group>"; };
 		73F915F5E2EB0FD0E7ADBDC3 /* Pods-SpotifitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA74AC7533388315196E389 /* Pods-SpotifitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifitTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifitTests/Pods-SpotifitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				194FFE2926669DB000272B3D /* Constants.swift */,
 				2B6B64EF26657D83008C924A /* Backend.swift */,
 				194FFE1D2666915300272B3D /* SearchViewController.swift */,
+				47A4FF1C2666AED000639944 /* FeedViewController.swift */,
 			);
 			path = Spotifit;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				478AC6EF265343BA00A835CA /* LoginViewController.swift in Sources */,
+				47A4FF1D2666AED000639944 /* FeedViewController.swift in Sources */,
 				19FA37C0265AD1420098632D /* PlaylistViewController.swift in Sources */,
 				194FFE1E2666915300272B3D /* SearchViewController.swift in Sources */,
 				479B520426532C170016126A /* ViewController.swift in Sources */,
