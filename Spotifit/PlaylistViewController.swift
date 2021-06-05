@@ -24,8 +24,8 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let test: () = get_complete_playlist(energy: 3, tempo: 150)
-        print(test)
+        //let test: () = get_complete_playlist(energy: 3, tempo: 150)
+        //print(test)
         
         self.energyLevelPicker.delegate = self
         self.energyLevelPicker.dataSource = self
@@ -67,6 +67,9 @@ class PlaylistViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBAction func onTapGoButton(_ sender: Any) {
         print(energyData) // delete later
         print(bpmData) // delete later
+        let energyDataNum = pickerData.firstIndex(of: energyData)! + 1
+        let test: () = get_complete_playlist(energy: energyDataNum, tempo: bpmData)
+        print(test)
         // To be implemented after figuring out API stuff
     }
     

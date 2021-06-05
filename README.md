@@ -1,6 +1,8 @@
 Original App Design Project
 ===
 
+**IF YOU ARE GRADING THIS PROJECT: For security concern, 2e didn’t include a file that is required to build the app but contains API key. Please let us know (through issue or email) before run it so we can send you a copy of that file. Thanks!**
+
 # Spotifit
 
 ## Table of Contents
@@ -41,8 +43,8 @@ An app that generates a music playlist based on workout conditions specified by 
 **Required Must-have Stories**
 - [X] User can navigate between Feed, Playlists, and Search screens
 - [X] User can login/logout with their personal Spotify account
-- [X] User can keep login
-- [ ] User can create a playlist using the following parameters:
+- [X] User stays logged in
+- [X] User can create a playlist using the following parameters:
     - BPM (for running it would be cadence)
     - Energy level (how pumped the playlist should be)
 - [ ] User can stream music from the playlists, within the app
