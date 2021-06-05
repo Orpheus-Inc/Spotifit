@@ -17,7 +17,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Spotifit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
@@ -26,7 +26,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="7fR-l6-CO9"/>
                                     <constraint firstAttribute="width" constant="294" id="GrQ-dO-ZTp"/>
-
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="  Login with Spotify" image="spotify-logo">
@@ -57,14 +56,11 @@
                             <constraint firstItem="3um-29-v66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="agp-fe-fbn"/>
                             <constraint firstItem="KkS-rh-quH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="fY2-IY-z3w"/>
                             <constraint firstItem="KkS-rh-quH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="mZ8-IS-3bj"/>
-
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="spotifyLoginButton" destination="KkS-rh-quH" id="E8f-fo-M7I"/>
-
                         <segue destination="gYv-Pn-ryd" kind="presentation" identifier="loginSegue" id="q1g-y5-byq"/>
-
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,10 +191,8 @@
                                 <rect key="frame" x="45" y="244" width="325" height="162"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-
                                     <constraint firstAttribute="width" constant="325" id="D2r-LR-BFf"/>
                                     <constraint firstAttribute="height" constant="162" id="NP8-bB-hS9"/>
-
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-H6-2w3">
@@ -253,7 +247,6 @@
                         <viewLayoutGuide key="safeArea" id="nhp-iX-aEK"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-
                             <constraint firstItem="Kaj-lF-tTa" firstAttribute="top" secondItem="Oac-Kc-I1V" secondAttribute="bottom" constant="46" id="5VD-r4-rVw"/>
                             <constraint firstItem="YS8-xa-IKD" firstAttribute="leading" secondItem="nhp-iX-aEK" secondAttribute="leading" constant="45" id="BOe-ae-bRx"/>
                             <constraint firstItem="YS8-xa-IKD" firstAttribute="top" secondItem="Kaj-lF-tTa" secondAttribute="bottom" constant="22" id="Bdz-z6-BUU"/>
@@ -271,7 +264,6 @@
                             <constraint firstItem="Oac-Kc-I1V" firstAttribute="top" secondItem="nhp-iX-aEK" secondAttribute="top" constant="40" id="rJ9-P1-4qC"/>
                             <constraint firstItem="nhp-iX-aEK" firstAttribute="trailing" secondItem="pzE-zr-Qn9" secondAttribute="trailing" constant="44" id="wTQ-Sl-xDn"/>
                             <constraint firstItem="48T-hb-mZ4" firstAttribute="top" secondItem="YS8-xa-IKD" secondAttribute="bottom" constant="83" id="zVL-DN-yIV"/>
-
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Playlist" image="music-icon" id="udv-gu-E7D"/>
