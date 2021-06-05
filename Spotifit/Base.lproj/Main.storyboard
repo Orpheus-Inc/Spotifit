@@ -17,11 +17,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Spotifit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-rh-quH">
-                                <rect key="frame" x="55" y="456" width="304" height="60"/>
+                                <rect key="frame" x="55" y="412" width="304" height="60"/>
                                 <color key="backgroundColor" red="0.34125930069999999" green="0.71633595230000002" blue="0.3763947487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="7fR-l6-CO9"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="spotifit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3um-29-v66">
-                                <rect key="frame" x="96" y="234" width="222" height="61"/>
+                                <rect key="frame" x="96" y="190" width="222" height="61"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,6 +91,10 @@
                                     <state key="normal" title="Logout">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="onLogOut" destination="BcD-2R-UtQ" eventType="touchUpInside" id="U7k-Kp-9VT"/>
+                                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" id="Gmi-OL-ulu"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
