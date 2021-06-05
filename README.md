@@ -1,6 +1,8 @@
 Original App Design Project
 ===
 
+**IF YOU ARE GRADING THIS PROJECT: For security concern, 2e didn’t include a file that is required to build the app but contains API key. Please let us know (through issue or email) before run it so we can send you a copy of that file. Thanks!**
+
 # Spotifit
 
 ## Table of Contents
