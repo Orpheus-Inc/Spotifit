@@ -11,6 +11,10 @@ import AlamofireImage
 
 class FeedTableViewController: UITableViewController {
     
+    @IBAction func onLogOut() {
+        PFUser.logOut()
+        performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
     var playlists = [PFObject]()
 
     override func viewDidLoad() {
